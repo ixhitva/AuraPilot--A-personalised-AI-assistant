@@ -13,7 +13,6 @@
 Built with a microservices architecture, it combines LLM-powered conversations with  
 long-term semantic memory, real-time sentiment analysis, and secure multi-user authentication.
 
-[Live Demo](#) · [Report Bug](../../issues) · [Request Feature](../../issues)
 
 </div>
 
