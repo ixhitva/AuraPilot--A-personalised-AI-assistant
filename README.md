@@ -1,11 +1,6 @@
-Here's a detailed, recruiter-impressive README:
-
-***
-
-```markdown
 <div align="center">
 
-#  AuraPilot
+# 🤖 AuraPilot
 ### Personalized AI Assistant with Semantic Memory
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
@@ -24,7 +19,7 @@ long-term semantic memory, real-time sentiment analysis, and secure multi-user a
 
 ---
 
-##  Table of Contents
+## 📌 Table of Contents
 
 - [Overview](#-overview)
 - [Architecture](#-architecture)
@@ -34,12 +29,11 @@ long-term semantic memory, real-time sentiment analysis, and secure multi-user a
 - [API Reference](#-api-reference)
 - [Project Structure](#-project-structure)
 - [Deployment](#-deployment)
-- [Screenshots](#-screenshots)
 - [Author](#-author)
 
 ---
 
-##  Overview
+## 🧠 Overview
 
 AuraPilot goes beyond a typical chatbot. Most AI assistants forget you the moment a session ends. AuraPilot solves this by storing every conversation as a **vector embedding** in Qdrant — a high-performance vector database — and semantically retrieving relevant memories during future conversations.
 
@@ -49,7 +43,7 @@ This means the assistant gets smarter and more personalized the more you use it.
 
 ---
 
-##  Architecture
+## 🏗️ Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -120,14 +114,14 @@ All services are containerized and orchestrated using **Docker Compose**.
 
 ## ✨ Features
 
--  **Semantic Long-Term Memory** — Stores conversations as vector embeddings; retrieves contextually relevant memories using cosine similarity search via Qdrant
--  **Sentiment-Aware Responses** — VADER sentiment analysis detects user mood in real time and adjusts the AI's tone dynamically (warm, empathetic, or neutral)
--  **Switchable AI Personas** — Choose between Friendly, Professional, Witty, or Empathetic personalities mid-conversation
--  **Secure Multi-User Auth** — JWT-based registration/login with bcrypt password hashing and per-user isolated memory
--  **Persistent Chat History** — All conversations stored in MongoDB; resumable across sessions
--  **Memory Management** — Users can clear both chat history and vector memory with one click
--  **Fully Dockerized** — 5-service Docker Compose setup with inter-service networking and persistent volumes
--  **Real-time Streaming Feel** — Groq inference is up to 10x faster than standard OpenAI calls
+- 🧠 **Semantic Long-Term Memory** — Stores conversations as vector embeddings; retrieves contextually relevant memories using cosine similarity search via Qdrant
+- 💬 **Sentiment-Aware Responses** — VADER sentiment analysis detects user mood in real time and adjusts the AI's tone dynamically (warm, empathetic, or neutral)
+- 🎭 **Switchable AI Personas** — Choose between Friendly, Professional, Witty, or Empathetic personalities mid-conversation
+- 👤 **Secure Multi-User Auth** — JWT-based registration/login with bcrypt password hashing and per-user isolated memory
+- 📜 **Persistent Chat History** — All conversations stored in MongoDB; resumable across sessions
+- 🗑️ **Memory Management** — Users can clear both chat history and vector memory with one click
+- 🐳 **Fully Dockerized** — 5-service Docker Compose setup with inter-service networking and persistent volumes
+- ⚡ **Real-time Streaming Feel** — Groq inference is up to 10x faster than standard OpenAI calls
 
 ---
 
@@ -144,7 +138,7 @@ docker --version  # 24+
 git --version
 ```
 
-You'll also need free API keys from:
+You'll also need a free API key from:
 - 🔑 [Groq Console](https://console.groq.com) — for LLM inference
 
 ### Installation
@@ -171,7 +165,7 @@ GROQ_API_KEY=your_groq_api_key
 QDRANT_URL=http://localhost:6333
 ```
 
->  Generate a secure JWT secret:
+> 💡 Generate a secure JWT secret instantly:
 > ```bash
 > node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 > ```
@@ -180,7 +174,7 @@ QDRANT_URL=http://localhost:6333
 ```bash
 docker-compose up --build
 ```
-Visit `http://localhost:3000` 
+Visit `http://localhost:3000` 🎉
 
 **4. Run Manually (without Docker)**
 ```bash
@@ -219,7 +213,7 @@ npm install && npm run dev
 | DELETE | `/history` | Clear chat + vector memory | ✅ |
 | PUT | `/persona` | Switch AI persona | ✅ |
 
-### AI Service Endpoints (Internal, port 8000)
+### AI Service Endpoints (Internal — port 8000)
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -230,7 +224,7 @@ npm install && npm run dev
 
 ---
 
-##  Project Structure
+## 📁 Project Structure
 
 ```
 AuraPilot/
@@ -282,7 +276,7 @@ AuraPilot/
 
 ### Deploy Frontend to Vercel
 ```bash
-# Update src/api/index.ts baseURL to your Render backend URL
+# Update src/api/index.ts baseURL to your Render backend URL first
 npm run build
 # Push to GitHub → Import on vercel.com → Done ✅
 ```
@@ -293,3 +287,20 @@ npm run build
 3. Set root directory to `backend/` or `ai-service/`
 4. Add environment variables in Render dashboard
 5. Deploy ✅
+
+---
+
+## 👨‍💻 Author
+
+**Ishitva**  
+Final Year Engineering Student  
+📍 Bengaluru, Karnataka, India
+
+[![GitHub](https://img.shields.io/badge/GitHub-ixhitva-181717?style=flat&logo=github)](https://github.com/ixhitva)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com)
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ as a Final Year Engineering Project</sub>
+</div>
