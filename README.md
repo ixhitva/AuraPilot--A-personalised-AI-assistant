@@ -290,17 +290,6 @@ npm run build
 
 ---
 
-## 👨‍💻 Author
-
-**Ishitva**  
-Final Year Engineering Student  
-📍 Bengaluru, Karnataka, India
-
-[![GitHub](https://img.shields.io/badge/GitHub-ixhitva-181717?style=flat&logo=github)](https://github.com/ixhitva)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com)
-
----
-
 <div align="center">
   <sub>Built with ❤️ as a Final Year Engineering Project</sub>
 </div>
